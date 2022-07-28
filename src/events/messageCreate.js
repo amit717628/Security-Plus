@@ -1,5 +1,5 @@
 const { MessageEmbed } = require("discord.js");
-const { createPool } = require("mysql");
+
 const client = require("../../index");
 
 client.on("messageCreate", async (message) => {
