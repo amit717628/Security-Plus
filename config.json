@@ -1,0 +1,16 @@
+{
+    "password": "",
+    "token": "",
+    "prefix": "",
+    "botname": "",
+    "ownerId": "",
+    "ignore": [
+        ""
+    ],
+    "developer_badge_user_id": [
+        ""
+    ],
+    "staff_badge_user_id": [
+        ""
+    ]
+}
