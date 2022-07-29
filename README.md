@@ -16,6 +16,7 @@ Security Plus is an advance anti nuke bot for discord server , Developed in Java
 - Anti Unban
 - Anti ChannelCreate
 - Anti Channel Delete
+- Anti Channel Update
 - Anti Vanity
 - Anti Webhook
 - Anti RoleCreate
@@ -24,6 +25,8 @@ Security Plus is an advance anti nuke bot for discord server , Developed in Java
 - AntiBot
 - Anti Everyone
 - Anti Sticker
+- Anti Ghost Ping
+
 
 
 ## Setup
@@ -35,6 +38,7 @@ Security Plus is an advance anti nuke bot for discord server , Developed in Java
     "prefix": "", // BOT PREFIX
     "botname": "", // BOT NAME
     "ownerId": "", // OWNER ID
+     "ghostping":  true, // IF THESE IS MARK TRUE THEN IT WILL ENABLE ANTI GHOST PING MODE
     "ignore": [
         ""
     ], // AUTOMOD IGNORE USERS ID
