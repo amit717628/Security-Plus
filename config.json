@@ -3,7 +3,7 @@
     "token": "",
     "prefix": "",
     "botname": "",
-     "ghostping":  true,
+    "ghostping":  true,
     "ownerId": "",
     "ignore": [
         ""
