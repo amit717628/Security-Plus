@@ -3,6 +3,7 @@
     "token": "",
     "prefix": "",
     "botname": "",
+    "support": "https://discord.gg/",
     "ghostping":  true,
     "ownerId": "",
     "ignore": [
