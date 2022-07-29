@@ -11,7 +11,11 @@ module.exports = {
      * @param {String[]} args
      */
     run: async (client, message, args) => {
-      if(message.member.permissions.has(`ADMINISTRATOR`)) return message.reply(`${client.error} You need admin perms`)
+      if(!message.member.permissions.has(`ADMINISTRATOR`)) {
+        message.reply("You don't have the permissions to add role to bots");
+         return;
+     }
+    
 const role = message.guild.roles.cache.get(args[0])  ||  message.mentions.roles.first()  
         const io = new MessageEmbed()
         .setDescription(`To use these action you need to provide a role`)

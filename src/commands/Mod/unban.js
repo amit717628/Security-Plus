@@ -11,7 +11,10 @@ module.exports = {
      * @param {String[]} args
      */
     run: async (client, message, args) => {
-      if(message.member.permissions.has(`ADMINISTRATOR`)) return message.reply(`${client.error} You need admin perms`)
+      if(!message.member.permissions.has(`BAN_MEMBERS`)) {
+        message.reply("You don't have the permissions to Ban Members");
+         return;
+     }
         let reason = args.slice(1).join(" ");
             let userID = args[0];
       

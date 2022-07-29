@@ -11,7 +11,10 @@ module.exports = {
      * @param {String[]} args
      */
     run: async (client, message, args) => {
-        if(message.member.permissions.has(`ADMINISTRATOR`)) return message.reply(`${client.error} You need admin perms`)
+        if(!message.member.permissions.has(`ADMINISTRATOR`)) {
+            message.reply("You don't have the permissions to add role");
+             return;
+         }
         const user = message.mentions.members.first() ||  message.guild.members.cache.get(args[0]);
         const guild = client.guilds.cache.get(message.guild.id)
         if(user ===undefined) return message.reply(`${client.error} User Not Found`)

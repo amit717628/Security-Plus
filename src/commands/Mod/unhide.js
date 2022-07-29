@@ -10,7 +10,10 @@ module.exports = {
      * @param {String[]} args
      */
     run: async (client, message, args) => {
-      if(message.member.permissions.has(`MANAGE_CHANNELS`)) return message.reply(`${client.error} You need manage channel perms`)
+      if(!message.member.permissions.has(`ADMINISTRATOR`)) {
+        message.reply("You don't have the permissions to add role");
+         return;
+     }
   const saichutiya = message.channel || message.mentions.channels.first() 
  if(message.guild.me.permissions.has(`MANAGE_CHANNELS`)) {
       const embedi = new MessageEmbed()

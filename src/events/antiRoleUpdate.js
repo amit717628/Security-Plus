@@ -1,5 +1,4 @@
 const { MessageEmbed } = require("discord.js");
-const { urlencoded } = require("express");
 const client = require("../../index");
 client.on("roleUpdate", async (oldRole,newRole) => {
     if (newRole.managed === true) return;

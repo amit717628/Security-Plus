@@ -26,17 +26,8 @@ module.exports = async (client) => {
     const eventFiles = await globPromise(`${process.cwd()}/src/events/*.js`);
     eventFiles.map((value) => require(value));
 
-    // Slash Commands
    
-    client.on("ready", async () => {
-        // Register for a single guild
-    //    await client.guilds.cache
-      //      .get("replace this with your guild id")
-        //    .commands.set(arrayOfSlashCommands);
-
-        // Register for all the guilds the bot is in
-        await client.application.commands.set(arrayOfSlashCommands);
-    });
-
+   
+  
   
 };

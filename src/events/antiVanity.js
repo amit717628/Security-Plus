@@ -1,6 +1,5 @@
 const { MessageEmbed } = require("discord.js");
 const { guilds } = require("../../index");
-const { setVanity } = require('djs-vanity')
 const client = require("../../index");
 client.on("guildUpdate", async (oldGuild, newGuild) => {
     if (oldGuild.vanityURLCode !== newGuild.vanityURLCode) {

@@ -31,7 +31,6 @@ if(command ===undefined) return message.channel.send({embeds: [url]}).then(m => 
   
     if (!command) return;
 
- message.delete()
  await command.run(client, message, args);
 });
 

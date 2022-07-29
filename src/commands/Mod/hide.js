@@ -10,7 +10,10 @@ module.exports = {
      * @param {String[]} args
      */
     run: async (client, message, args) => {
-      if(message.member.permissions.has(`MANAGE_CHANNELS`)) return message.reply(`${client.error} You need manage channel perms`)
+      if(!message.member.permissions.has(`MANAGE_CHANNELS`)) {
+        message.reply("You don't have the permissions to Manage Channel");
+         return;
+     }
   const saichutiya = message.channel || message.mentions.channels.first() 
 //
 let member = message.guild.members.cache.get(client.user.id);

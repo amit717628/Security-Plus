@@ -10,7 +10,10 @@ module.exports = {
      * @param {String[]} args
      */
     run: async (client, message, args) => {
-        if(message.member.permissions.has(`BAN_MEMBERS`)) return message.reply(`${client.error} You need ban perms`)
+        if(!message.member.permissions.has(`BAN_MEMBERS`)) {
+           message.reply("You don't have the permissions to Ban Members");
+            return;
+        }
         const user = message.mentions.members.first() ||  message.guild.members.cache.get(args[0]);
         let rea = args.slice(1).join(" ") || "No Reason Provided"
         const emisai = new MessageEmbed()

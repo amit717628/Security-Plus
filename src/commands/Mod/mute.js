@@ -11,7 +11,10 @@ module.exports = {
      * @param {String[]} args
      */
     run: async (client, message, args) => {
-        if(message.member.permissions.has(`MODERATE_MEMBERS`)) return message.reply(`${client.error} You need manage member perms`)
+        if(!message.member.permissions.has(`MODERATE_MEMBERS`)) {
+            message.reply("You don't have the permissions to mute members");
+             return;
+         }
         const member = message.mentions.members.first() || message.guild.members.cache.get(args[0]);
         const duration = args[1];
         let reason = args.slice(2).join(" ");
