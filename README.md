@@ -33,8 +33,6 @@ Security Plus is an advance anti nuke bot for discord server , Developed in Java
 
 ```js
 {
-    "password": "", // GET PASSWORD FROM SUPPORT
-    "token": "", // BOT TOKEN
     "prefix": "", // BOT PREFIX
     "botname": "", // BOT NAME
     "ownerId": "", // OWNER ID
@@ -49,6 +47,11 @@ Security Plus is an advance anti nuke bot for discord server , Developed in Java
         ""
     ] // STAFF BADGE USER ID
 }
+```
+## ENV Format
+```js
+password = "PASSWORD"
+token = "YOUR TOKEN"
 ```
 
 
