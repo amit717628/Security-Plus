@@ -90,9 +90,6 @@ Clone the repo and install all dependencies then use
     
 ## Support
 
-For support,  join our [Discord Server](https://discord.gg/Z4tKgfgj9Y).
-
-Get Password at [here](https://discord.gg/Z4tKgfgj9Y).
 
 These is an Free Edition of Security Plus
 
